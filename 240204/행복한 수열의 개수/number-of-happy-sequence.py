@@ -11,6 +11,10 @@ for i in range(m): # 0, 1, 2
     sequences.append(row)
     sequences.append(col)
 
+if n == 1:
+    print(2 * m)
+    exit()
+
 result = 0
 for sequence in sequences:
     cont = set()
