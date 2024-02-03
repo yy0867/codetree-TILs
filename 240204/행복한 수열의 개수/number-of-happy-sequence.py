@@ -23,6 +23,10 @@ for sequence in sequences:
         if sequence[i] == sequence[i - 1]:
             cont.add(i)
             cont.add(i - 1)
+            if len(cont) >= n:
+                break
+        else:
+            cont = set()
     
     result += (1 if len(cont) >= n else 0)
 
